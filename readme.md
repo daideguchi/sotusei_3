@@ -28,4 +28,5 @@
 
 
 ## URL
+- 推奨環境PC（レスポンシブ対応していません）
 - http://dark-saga-2817.vivian.jp/
