@@ -44,29 +44,23 @@ foreach ($result as $record) {
 </head>
 
 <body>
+  <h1>ようこそ、<?=  $_SESSION["username"]?>さん</h1>
   <p>QRを読み取るとExpoに飛びます（React nativeの開発アプリ）Expoアプリ要インストール</p>
+  <p>現在はまだカメラロールにアクセスして画像を画面に貼り付ける機能のみです</p>
   <div><img src="qrimg.png" alt=""></div>
   <div>
-    <p>下記の画面が表示される。ボタンを押すとカメラロールにアクセスする</p>
+    <p>QRを読み取ると下記の画面が表示される。ボタンを押すとカメラロールにアクセスする</p>
     <img src="appimg.png" alt=""></div>
-  <fieldset>
-    <legend>DB連携型todoリスト（一覧画面）<?= $_SESSION["username"]?></legend>
-    <a href="todo_input.php">入力画面</a>
-    <a href="todo_logout.php">logout</a>
-    <table>
-      <thead>
-        <tr>
-          <th>deadline</th>
-          <th>todo</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <?= $output ?>
-      </tbody>
-    </table>
-  </fieldset>
+    <br>
+    <br>
+    <a href="todo_logout.php">ログアウトする</a>
+    <br>
+    <br>
+
+
+
+          <a href="./react_native/app/sotusei/web-build/index.html">test</a>
+
 </body>
 
 </html>
@@ -75,4 +69,8 @@ foreach ($result as $record) {
   img{
     width: 30%;
     height: 30%;
+  }
+
+  body{
+    background-color: #f5deb3;
   }
